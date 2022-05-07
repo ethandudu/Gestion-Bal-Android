@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bal</string>
+    <string name="title_activity_loading_screen">LoadingScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY</string>
+    <string name="gestion_bal">Gestion Bal</string>
+    <string name="connexion">Connexion</string>
+    <string name="mot_de_passe">Mot de passe</string>
+    <string name="todo">TODO</string>
+    <string name="identifiant">Identifiant</string>
+</resources>
