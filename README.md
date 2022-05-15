@@ -13,15 +13,14 @@ Application Android pour la gestion du bal du Lycée Pasquet
 
 ## Installation
 ### Pré-requis
-- Android Studio
-- Gestion-Bal-Windows
-- MySQL/MariaDB
+- ![Gestion-Bal-Server](https://github.com/ethandudu/Gestion-Bal-Server)
+- ![Android Studio](https://developer.android.com/studio/)
+- ![Gestion-Bal-Windows](https://github.com/ethandudu/Gestion-Bal-Windows)
 
 ### Procédure
 - Cloner le repos
-- Importer le fichier database.sql dans votre serveur MySQL/MariaDB
 - Ouvrir le dossier avec Android Studio
 
 ## Informations utiles
 - Identifiants de connexion par défaut : `admin` / `admin`
-- Pour créer un nouvel utilisateur, ajouter un participant etc : utililser Gestion-Bal-Windows
+- ![Licence](https://github.com/ethandudu/Gestion-Bal-Android/blob/main/LICENCE.md)
