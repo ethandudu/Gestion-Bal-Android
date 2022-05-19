@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         btn_stats.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
+                ldtxt();
                 Intent intent = new Intent(MainActivity.this, Stats.class);
                 startActivity(intent);
             }
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void fct_dis(){
-        Toast.makeText(this, "Fonction non activée", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Fonction non activée", Toast.LENGTH_SHORT).show();
+    }
+
+    private void ldtxt(){
+        Toast.makeText(this, "Chargement ...", Toast.LENGTH_SHORT).show();
     }
 }

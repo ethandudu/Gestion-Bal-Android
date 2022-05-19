@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.ethanduault.bal"
     android:versionCode="1"
     android:versionName="1.0">
 
@@ -18,6 +17,9 @@
         android:roundIcon="@mipmap/ic_bal_foreground"
         android:supportsRtl="true"
         android:theme="@style/Theme.Bal">
+        <activity
+            android:name=".Search"
+            android:exported="false" />
         <activity
             android:name=".List"
             android:exported="false" />

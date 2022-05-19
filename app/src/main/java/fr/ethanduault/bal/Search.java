@@ -18,7 +18,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Objects;
 
-public class Infos extends AppCompatActivity {
+public class Search extends AppCompatActivity {
 
     // variables SQL
     private String name = "";
@@ -33,7 +33,7 @@ public class Infos extends AppCompatActivity {
     private String age = "";
     private String validated = "";
     private String minor = "";
-    private final String hashcode = QRCodeScan.getCodescan();
+    private final String hashcode = List.getCodescan();
     private final String username = Connexion.getusername();
     private final String userfirstname = Connexion.getuserfirstname();
 
@@ -112,7 +112,7 @@ public class Infos extends AppCompatActivity {
         btn_scan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Infos.this, QRCodeScan.class); //QRCodeScan.class
+                Intent intent = new Intent(Search.this, QRCodeScan.class); //QRCodeScan.class
                 startActivity(intent);
                 finish();
             }
@@ -120,7 +120,7 @@ public class Infos extends AppCompatActivity {
 
         btn_ok.setOnClickListener(new View.OnClickListener(){
             @Override
-                public void onClick(View view){
+            public void onClick(View view){
                 but_ok();
             }
         });
@@ -138,7 +138,7 @@ public class Infos extends AppCompatActivity {
             e.printStackTrace();
         }
 
-        
+
     }
 
     private void loadbdd(){
@@ -146,41 +146,21 @@ public class Infos extends AppCompatActivity {
         try {
             Fonctions fonc = new Fonctions();
             Statement st = fonc.connexionSQLBDD();
-
-            String SQL = "SELECT count(*) FROM participants WHERE hash = '"+hashcode+"'";
-
+            String SQL;
+            SQL = "SELECT * FROM participants WHERE hash = '"+hashcode+"'";
             final ResultSet rs = st.executeQuery(SQL);
             rs.next();
+            name = rs.getString("name");
+            firstname = rs.getString("firstname");
+            birthdate = rs.getString("birthdate");
+            classe = rs.getString("classe");
+            age = rs.getString("age");
+            minor = rs.getString("minor");
+            autorisation = rs.getString("autorisation");
+            payed = rs.getString("payed");
+            urgence = rs.getString("urgence");
+            validated = rs.getString("validated");
 
-            if (rs.getInt(1)==0){
-                Toast.makeText(this, "❌ QRCode invalide", Toast.LENGTH_LONG).show();
-                Runnable runnable = new Runnable(){
-                    @Override
-                    public void run() {
-
-                    }
-                };
-                new Handler().postDelayed(runnable,3000);
-                Intent intent = new Intent(Infos.this, QRCodeScan.class);
-                startActivity(intent);
-                finish();
-            }else{
-                String SQL2 = "SELECT * FROM participants WHERE hash = '"+hashcode+"'";
-                Fonctions fonc2 = new Fonctions();
-                Statement st2 = fonc2.connexionSQLBDD();
-                final ResultSet rs2 = st2.executeQuery(SQL2);
-                rs2.next();
-                name = rs2.getString("name");
-                firstname = rs2.getString("firstname");
-                birthdate = rs2.getString("birthdate");
-                classe = rs2.getString("classe");
-                age = rs2.getString("age");
-                minor = rs2.getString("minor");
-                autorisation = rs2.getString("autorisation");
-                payed = rs2.getString("payed");
-                urgence = rs2.getString("urgence");
-                validated = rs2.getString("validated");
-            }
 
 
         }catch(Exception e){
@@ -197,7 +177,7 @@ public class Infos extends AppCompatActivity {
             st.executeUpdate(SQL);
 
             Toast.makeText(this, "✅ Entrée validée", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(Infos.this, QRCodeScan.class);
+            Intent intent = new Intent(Search.this, List.class);
             startActivity(intent);
             finish();
         }catch(Exception e){
@@ -209,7 +189,7 @@ public class Infos extends AppCompatActivity {
 
     private void but_no(){
         Toast.makeText(this, "❌ Entrée annulée", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(Infos.this, QRCodeScan.class);
+        Intent intent = new Intent(Search.this, List.class);
         startActivity(intent);
         finish();
     }
