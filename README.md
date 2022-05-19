@@ -5,6 +5,8 @@
 
 Application Android pour la gestion du bal du Lycée Pasquet
 
+⚠ Développement en cours
+
 ## Sommaire
 - Installation
   - Pré-requis
@@ -13,9 +15,9 @@ Application Android pour la gestion du bal du Lycée Pasquet
 
 ## Installation
 ### Pré-requis
-- ![Gestion-Bal-Server](https://github.com/ethandudu/Gestion-Bal-Server)
-- ![Android Studio](https://developer.android.com/studio/)
-- ![Gestion-Bal-Windows](https://github.com/ethandudu/Gestion-Bal-Windows)
+- [Gestion-Bal-Server](https://github.com/ethandudu/Gestion-Bal-Server)
+- [Android Studio](https://developer.android.com/studio/)
+- [Gestion-Bal-Windows](https://github.com/ethandudu/Gestion-Bal-Windows)
 
 ### Procédure
 - Cloner le repos
@@ -23,4 +25,5 @@ Application Android pour la gestion du bal du Lycée Pasquet
 
 ## Informations utiles
 - Identifiants de connexion par défaut : `admin` / `admin`
-- ![Licence](https://github.com/ethandudu/Gestion-Bal-Android/blob/main/LICENCE.md)
+- [Licence](https://github.com/ethandudu/Gestion-Bal-Android/blob/main/LICENCE.md)
+- Icones par [Icons8](https://icons8.com/)
