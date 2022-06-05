@@ -30,7 +30,9 @@ public class Connexion extends AppCompatActivity {
     public static String getusername(){
         return username;
     }
-    public static String getuserfirstname() {return userfirstname;}
+    public static String getuserfirstname() {
+        return userfirstname;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -110,9 +112,11 @@ public class Connexion extends AppCompatActivity {
                 rs2.next();
                 username = rs2.getString("name");
                 userfirstname = rs2.getString("firstname");
-                Toast.makeText(this, "Bienvenue "+userfirstname + " " + username, Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Bienvenue "+userfirstname + " " + username, Toast.LENGTH_SHORT).show();
 
                 NextActivity();
+            }else{
+               Toast.makeText(this, "❌ Identifiant/Mot de passe invalide", Toast.LENGTH_SHORT).show();
             }
 
         }catch(Exception e){
@@ -123,7 +127,6 @@ public class Connexion extends AppCompatActivity {
 
     private void NextActivity(){
         Intent intent = new Intent(Connexion.this, MainActivity.class);
-        //Intent intent = new Intent(Connexion.this, Infos.class);
         startActivity(intent);
         finish();
     }
