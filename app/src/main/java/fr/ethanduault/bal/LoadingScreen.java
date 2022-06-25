@@ -50,7 +50,7 @@ public class LoadingScreen extends AppCompatActivity {
             // You can directly ask for the permission.
             // The registered ActivityResultCallback gets the result of this request.
             requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
-            new Handler().postDelayed(runnable, 3000);
+            new Handler().postDelayed(runnable, 1000);
 
         }
     }

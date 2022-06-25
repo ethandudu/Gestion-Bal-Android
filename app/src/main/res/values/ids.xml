@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_drink" type="id" />
+    <item name="btn_snack" type="id" />
+    <item name="snack" type="id" />
+    <item name="snack_lb" type="id" />
+    <item name="drink" type="id" />
+    <item name="drink_lb" type="id" />
+</resources>

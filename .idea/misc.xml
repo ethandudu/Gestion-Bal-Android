@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_bar_infos.xml" value="0.264453125" />
+        <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_bar_qr.xml" value="0.275" />
         <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_connexion.xml" value="0.27049180327868855" />
-        <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_infos.xml" value="0.18818306010928962" />
+        <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_infos.xml" value="0.25" />
         <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_list.xml" value="0.275" />
         <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_main.xml" value="0.275" />
+        <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_qrcode_scan.xml" value="0.275" />
         <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_search.xml" value="0.275" />
         <entry key="..\:/Cloud/Dev/Gestion Bal/Android/Bal/app/src/main/res/layout/activity_stats.xml" value="0.25" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/Bal/app/src/main/res/layout/activity_connexion.xml" value="0.25" />

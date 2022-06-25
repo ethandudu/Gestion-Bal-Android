@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button btn_list = findViewById(R.id.btn_list);
         Button btn_stats = findViewById(R.id.btn_stats);
         Button btn_cloak = findViewById(R.id.btn_cloak);
+        Button btn_bar = findViewById(R.id.btn_bar);
 
         btn_scan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
                 fct_dis();
                 //Intent intent = new Intent(MainActivity.this, QRCodeScan.class);
                 //startActivity(intent);
+            }
+        });
+
+        btn_bar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(MainActivity.this, BarQR.class);
+                startActivity(intent);
             }
         });
     }
