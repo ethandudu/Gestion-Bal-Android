@@ -2,6 +2,7 @@ package fr.ethanduault.bal;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.StrictMode;
 import android.view.View;
 import android.view.Window;
@@ -18,6 +19,7 @@ import java.security.NoSuchAlgorithmException;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Base64;
+import java.util.concurrent.TimeUnit;
 
 public class Connexion extends AppCompatActivity {
 
@@ -112,7 +114,7 @@ public class Connexion extends AppCompatActivity {
                 rs2.next();
                 username = rs2.getString("name");
                 userfirstname = rs2.getString("firstname");
-                Toast.makeText(this, "Bienvenue "+userfirstname + " " + username, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Bienvenue "+userfirstname + " " + username, Toast.LENGTH_SHORT).show();
 
                 NextActivity();
             }else{

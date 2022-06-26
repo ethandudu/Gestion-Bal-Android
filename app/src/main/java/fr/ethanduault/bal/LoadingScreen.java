@@ -37,20 +37,15 @@ public class LoadingScreen extends AppCompatActivity {
                 finish();
             }
         };
-        //Wait 3s
-
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
             // You can use the API that requires the permission.
-            new Handler().postDelayed(runnable, 3000);
-            //Intent intent = new Intent(this, Connexion.class);
-            //startActivity(intent);
-            //finish();
+            new Handler().postDelayed(runnable, 1000);
         } else {
             // You can directly ask for the permission.
             // The registered ActivityResultCallback gets the result of this request.
             requestPermissions(new String[]{Manifest.permission.CAMERA}, 1);
-            new Handler().postDelayed(runnable, 1000);
+            new Handler().postDelayed(runnable, 5000);
 
         }
     }
