@@ -8,11 +8,17 @@ Application Android pour la gestion du bal du Lycée Pasquet
 ⚠ Développement en cours
 
 ## Sommaire
+- Fonctionnalités
 - Installation
   - Pré-requis
   - Procédure
 - Informations utiles
 
+## Fonctionnalités
+- Validation des entrées
+- Statistiques
+- Gestion des boissons/snacks
+- Recherche d'un participant
 ## Installation
 ### Pré-requis
 - [Gestion-Bal-Server](https://github.com/ethandudu/Gestion-Bal-Server)
