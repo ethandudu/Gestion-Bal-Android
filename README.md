@@ -1,5 +1,5 @@
 # Gestion-Bal-Android
-![GitHub release (dernière en date)](https://img.shields.io/github/v/release/ethandudu/Gestion-Bal-Android-blue?display_name=release&style=for-the-badge&logo=github)
+![GitHub release (dernière en date)](https://img.shields.io/github/v/release/ethandudu/Gestion-Bal-Android?display_name=release&logo=github&style=for-the-badge)
 ![Issues ouvertes](https://img.shields.io/github/issues/ethandudu/Gestion-Bal-Android?style=for-the-badge&logo=github)
 ![Versions Android](https://img.shields.io/badge/Android-6--11-green?style=for-the-badge&logo=android)
 
